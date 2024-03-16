@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color:white ;
+}
+.header{
+    height: 10vh;
+    width: 100%;
+    background-color:rgb(243, 255, 255);
+    display: flex;
+    
+}
+.logo{
+    
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clgname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+}
+.clgname > h3{
+    color: rgb(121, 117, 117);
+    font-weight: 400;
+}
+.empty{
+    width: 10%;
+}
+.wrapper{
+    height: 90vh;
+    display: flex;
+
+}
+.depart > h1{
+    letter-spacing: 1px;
+}
+span{
+    color: red;
+}
+#feni{
+    color: green;
+}
+.fenix{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.matrix{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.matrixpad{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    height: 550px;
+    width: 550px;
+    cursor: pointer;
+}
+.cel1{
+    position: relative;
+    transform-style: preserve-3d;
+    border: 1px solid black;
+    transition: all .6s ease;
+}
+.cel1u{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .6s ease;
+}
+.rotate{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background-image: url(./assets/tile.jpeg);
+    border: none;
+    outline: none;
+}
+.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: blueviolet;
+}
+.prize{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
